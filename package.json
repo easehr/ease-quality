@@ -15,16 +15,26 @@
     "url": "git@github.com:nightwatchjs/nightwatch.git"
   },
   "dependencies": {
+    "bluebird": "^3.5.1",
     "chai-nightwatch": "~0.1.x",
     "chromedriver": "^2.40.0",
+    "dotenv": "^6.0.0",
     "ejs": "2.5.7",
+    "emailjs-imap-client": "^3.0.7",
+    "faker": "^4.1.0",
+    "growl": "^1.10.5",
+    "imap": "^0.8.19",
+    "imap-promise": "^1.0.2",
+    "imap-simple": "^4.1.0",
     "lodash.clone": "3.0.3",
     "lodash.defaultsdeep": "4.3.2",
+    "mail-listener2": "^0.3.1",
+    "mailparser": "^2.2.0",
     "minimatch": "3.0.3",
     "mkpath": "1.0.0",
     "mocha-nightwatch": "3.2.2",
     "optimist": "0.6.1",
-    "proxy-agent": "^3.0.0",
+    "proxy-agent": "^3.0.1",
     "q": "1.4.1"
   },
   "devDependencies": {
@@ -42,7 +52,7 @@
     "mocha-lcov-reporter": "^1.2.0",
     "mock-spawn": "^0.2.1",
     "mockery": "~1.4.0",
-    "nock": "^9.4.1",
+    "nock": "^9.4.2",
     "xml2json": "^0.11.0"
   },
   "bin": {

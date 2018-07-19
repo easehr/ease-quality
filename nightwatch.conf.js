@@ -1,10 +1,17 @@
-{
+'use strict';
+
+// LOAD ENV 
+const dotenv = require('dotenv');
+require('dotenv').config();
+
+module.exports = {
+
   "src_folders" : ["./tests"],
   "output_folder" : "./reports",
   "custom_commands_path" : "",
   "custom_assertions_path" : "",
-  "page_objects_path" : "",
-  "globals_path" : "./globals/globalsModule.js",
+  "page_objects_path" : "./pages",
+  "globals_path" : "./globals/globals.js",
 
   "selenium" : {
     "start_process" : true,
