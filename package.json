@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/easehr/ease-quality-app"
+    "url": "https://github.com/easehr/ease-quality"
   },
   "scripts": {
     "selenium-postinstall": "node node_modules/.bin/selenium-standalone install",
