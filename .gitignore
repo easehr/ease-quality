@@ -1,11 +1,8 @@
-selenium-server-standalone-*
-chromedriver
-chromedriver-*
+.DS_Store
 phantomjs
 IEDriverServer_*
 .env
 .vscode
 node_modules
 node_modules-*
-.DS_Store
 ease-quality-workspace.code-workspace
