@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="EaseCentral" timestamp="2018-08-10T14:58:52" time="79.567" tests="0" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="a8837d1befc8787b212ec837b9e83a8e"/>
+      <property name="suiteName" value="EaseCentral"/>
+      <property name="capabilities" value="chrome.mac"/>
+      <property name="file" value="./test/specs/home.test.spec.js"/>
+    </properties>
+  </testsuite>
+  <testsuite name="Home" timestamp="2018-08-10T14:58:52" time="79.566" tests="4" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="a8837d1befc8787b212ec837b9e83a8e"/>
+      <property name="suiteName" value="Home"/>
+      <property name="capabilities" value="chrome.mac"/>
+      <property name="file" value="./test/specs/home.test.spec.js"/>
+    </properties>
+    <testcase classname="chrome.mac.Home" name="test_that_the_page_is_accessible_and_opens_in_browser" time="1.382">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/url - {"url":"https://www.easecentral.com/"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.mac.Home" name="test_that_all_page_links_are_functional" time="56.352">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//*[@id=\"header\"]/div/div/div/div/div[1]/div/a[1]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.8347912275507336-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.8347912275507336-1/text - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"FEATURES"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//*[@id=\"header\"]/div/div/div/div/div[1]/div/a[1]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.8347912275507336-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.8347912275507336-1/attribute/href - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"https://www.easecentral.com/features/"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//*[@id=\"header\"]/div/div/div/div/div[1]/div/a[1]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.8347912275507336-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.8347912275507336-1/click - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/url - {"url":"https://www.easecentral.com/"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//*[@id=\"header\"]/div/div/div/div/div[1]/div/a[2]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.019403529888935456-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.019403529888935456-1/text - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"PRICING"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//*[@id=\"header\"]/div/div/div/div/div[1]/div/a[2]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.019403529888935456-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.019403529888935456-1/attribute/href - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"https://www.easecentral.com/pricing/"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//*[@id=\"header\"]/div/div/div/div/div[1]/div/a[2]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.019403529888935456-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.019403529888935456-1/click - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/url - {"url":"https://www.easecentral.com/"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//*[@id=\"header\"]/div/div/div/div/div[1]/div/a[3]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.1798323019746917-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.1798323019746917-1/text - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"MARKETPLACE"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//*[@id=\"header\"]/div/div/div/div/div[1]/div/a[3]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.1798323019746917-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.1798323019746917-1/attribute/href - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"https://www.easecentral.com/marketplace/"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//*[@id=\"header\"]/div/div/div/div/div[1]/div/a[3]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.1798323019746917-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.1798323019746917-1/click - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/url - {"url":"https://www.easecentral.com/"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//*[@id=\"header\"]/div/div/div/div/div[1]/div/a[4]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.2976024814351186-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.2976024814351186-1/text - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"EMPLOYERS"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//*[@id=\"header\"]/div/div/div/div/div[1]/div/a[4]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.2976024814351186-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.2976024814351186-1/attribute/href - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"https://www.easecentral.com/employers/"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//*[@id=\"header\"]/div/div/div/div/div[1]/div/a[4]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.2976024814351186-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.2976024814351186-1/click - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/url - {"url":"https://www.easecentral.com/"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(@href, \"/security/\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.6653303379836695-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.6653303379836695-1/text - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"Security"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(@href, \"/security/\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.6653303379836695-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.6653303379836695-1/attribute/href - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"https://www.easecentral.com/security/"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(@href, \"/security/\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.6653303379836695-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.6653303379836695-1/click - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/url - {"url":"https://www.easecentral.com/"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Careers\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.596168694439611-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.596168694439611-1/text - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"Careers"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Careers\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.596168694439611-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.596168694439611-1/attribute/href - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"https://www.easecentral.com/careers"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Careers\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.596168694439611-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.596168694439611-1/click - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/url - {"url":"https://www.easecentral.com/"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Privacy Policy\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.09101116433045564-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.09101116433045564-1/text - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"Privacy Policy"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Privacy Policy\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.09101116433045564-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.09101116433045564-1/attribute/href - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"https://www.easecentral.com/privacy/"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Privacy Policy\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.09101116433045564-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.09101116433045564-1/click - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/url - {"url":"https://www.easecentral.com/"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Terms of Service\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.06038661931217293-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.06038661931217293-1/text - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"Terms of Service"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Terms of Service\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.06038661931217293-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.06038661931217293-1/attribute/href - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"https://www.easecentral.com/terms/"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Terms of Service\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.06038661931217293-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.06038661931217293-1/click - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/url - {"url":"https://www.easecentral.com/"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Broker Blog\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.49496640651861634-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.49496640651861634-1/text - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"Broker Blog"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Broker Blog\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.49496640651861634-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.49496640651861634-1/attribute/href - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"http://blog.easecentral.com/category/broker-tool-belt/"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Broker Blog\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.49496640651861634-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.49496640651861634-1/click - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/url - {"url":"https://www.easecentral.com/"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Best Benefits Software\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.1126196134304649-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.1126196134304649-1/text - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"Best Benefits Software"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Best Benefits Software\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.1126196134304649-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.1126196134304649-1/attribute/href - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"https://www.easecentral.com/best-benefits-administration-software-for-brokers/"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Best Benefits Software\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.1126196134304649-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.1126196134304649-1/click - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/url - {"url":"https://www.easecentral.com/"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Help Desk\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.6326138838219892-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.6326138838219892-1/text - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"Help Desk"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Help Desk\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.6326138838219892-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.6326138838219892-1/attribute/href - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"https://support.easecentral.com/support/home"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Help Desk\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.6326138838219892-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.6326138838219892-1/click - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/url - {"url":"https://www.easecentral.com/"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Press\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.7673245143575174-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.7673245143575174-1/text - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"Press"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Press\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.7673245143575174-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.7673245143575174-1/attribute/href - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"http://blog.easecentral.com/category/news/"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Press\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.7673245143575174-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.7673245143575174-1/click - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/url - {"url":"https://www.easecentral.com/"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//*[@id=\"header\"]/div/div/div/div/div[1]/div/a[5]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.8279109522852119-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.8279109522852119-1/text - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"LOGIN"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//*[@id=\"header\"]/div/div/div/div/div[1]/div/a[5]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.8279109522852119-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.8279109522852119-1/click - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/url - {"url":"https://www.easecentral.com/"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Sign Up\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.7648162749181886-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.7648162749181886-1/text - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"Sign Up"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"xpath","value":"//a[contains(text(),\"Sign Up\")]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.7648162749181886-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.7648162749181886-1/click - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/url - {"url":"https://www.easecentral.com/"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.mac.Home" name="test_that_the_Get_Demo_modal_is_usable" time="7.598">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"css selector","value":"button.css-12nbrge"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.47984690019357124-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.47984690019357124-1/click - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"css selector","value":".css-k12d22"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.47984690019357124-2"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.47984690019357124-2/text - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"Request an EaseCentral demo"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"css selector","value":"input[name=\"email\"]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.47984690019357124-3"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/elements - {"using":"css selector","value":"input[name=\"email\"]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":[{"ELEMENT":"0.47984690019357124-3"}]}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.47984690019357124-3/clear - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.47984690019357124-3/value - {"value":["A","n","a","h","i",".","L","e","d","n","(12 more items)"],"text":"Anahi.Ledner@gmail.com"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"css selector","value":"input[name=\"firstName\"]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.47984690019357124-4"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/elements - {"using":"css selector","value":"input[name=\"firstName\"]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":[{"ELEMENT":"0.47984690019357124-4"}]}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.47984690019357124-4/clear - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.47984690019357124-4/value - {"value":["J","a","s","m","i","n"],"text":"Jasmin"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"css selector","value":"input[name=\"lastName\"]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.47984690019357124-5"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/elements - {"using":"css selector","value":"input[name=\"lastName\"]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":[{"ELEMENT":"0.47984690019357124-5"}]}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.47984690019357124-5/clear - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.47984690019357124-5/value - {"value":["W","a","l","t","e","r"],"text":"Walter"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"css selector","value":"input[name=\"company\"]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.47984690019357124-6"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/elements - {"using":"css selector","value":"input[name=\"company\"]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":[{"ELEMENT":"0.47984690019357124-6"}]}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.47984690019357124-6/clear - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.47984690019357124-6/value - {"value":["O","'","R","e","i","l","l","y"," ","I","(2 more items)"],"text":"O'Reilly Inc"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"css selector","value":"input[name=\"phone\"]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.47984690019357124-7"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/elements - {"using":"css selector","value":"input[name=\"phone\"]"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":[{"ELEMENT":"0.47984690019357124-7"}]}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.47984690019357124-7/clear - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.47984690019357124-7/value - {"value":["8","1","5","-","9","4","6","-","2","1","(7 more items)"],"text":"815-946-2194 x497"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"css selector","value":"button.css-13i7nzy > svg"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.47984690019357124-8"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.47984690019357124-8/click - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.mac.Home" name="test_that_the_video_modal_displays" time="14.231">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/execute - {"script":"return (function scroll(x, y) {\n    return window.scrollTo(x, y);\n}).apply(null, arguments)","args":[0,0]}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/url - {"url":"https://www.easecentral.com/"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"css selector","value":"button.css-11y5mo2"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.2389881245913712-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.2389881245913712-1/text - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":"Watch Video"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"css selector","value":"button.css-11y5mo2"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.2389881245913712-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.2389881245913712-1/click - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element - {"using":"css selector","value":"button.vidyard_tclose"}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":{"ELEMENT":"0.2389881245913712-2"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214/element/0.2389881245913712-2/click - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+COMMAND: DELETE http://127.0.0.1:4444/wd/hub/session/bf553d13554b968f2c63fa74733fe214 - {}
+RESULT: {"sessionId":"bf553d13554b968f2c63fa74733fe214","status":0,"value":null}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

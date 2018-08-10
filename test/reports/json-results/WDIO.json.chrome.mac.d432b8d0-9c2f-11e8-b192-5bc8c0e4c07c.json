@@ -1,0 +1,1 @@
+{"start":"2018-08-09T23:56:24.929Z","end":"2018-08-09T23:56:27.228Z","capabilities":{"browserName":"Chrome","platform":"MAC","acceptUntrustedCertificates":true,"maxInstances":"5"},"host":"127.0.0.1","port":4444,"baseUrl":"https://www.easecentral.com","framework":"mocha","mochaOpts":{"timeout":90000,"ui":"bdd","compilers":["js:babel-register"]},"suites":[]}
