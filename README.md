@@ -10,7 +10,7 @@ Initial setup framework for automated UI tests, now optimized to support React. 
 
 ###  - OR - 
 
-4. If you have **ease-ui** and you are running **yarn start**, type `grunt webdriver:selectchrome -v`, which will launch Chrome and navigate to  **http://192.168.1.100:8000/** to test a single utility page.
+4. If you have **ease-ui** and you are running **yarn start**, type `grunt webdriver:selectchrome -v`, which will launch Chrome and navigate to  __http://192.168.1.100:8000/__ to test a single utility page (you can update the URL - see below).
 
 ## Dependencies / Troubleshoot
 If you run into any issues - please check that you have these dependencies.
