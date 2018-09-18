@@ -8,7 +8,7 @@ Initial setup framework for automated UI tests, now optimized to support React. 
 2. Next, apply  `npm update`.
 3. Type `grunt webdriver:chrome -v`, which will launch Chrome and navigate to our production version of EaseCentral. **Don't worry**. This is just a simple test.
 
-##  - OR - 
+###  - OR - 
 
 4. If you have **ease-ui** and you are running **yarn start**, type `grunt webdriver:selectchrome -v`, which will launch Chrome and navigate to  **http://192.168.1.100:8000/** to test a single utility page.
 
