@@ -56,6 +56,7 @@ exports.config = {
   // =========
   // Test Data
   // =========
+  selectctlUrl: utils._selectctlUrl,
   baseUrl: utils._baseUrl,
   prodUrl: utils._prodUrl,
   netlifyUrl: utils._netlifyUrl,

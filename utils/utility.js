@@ -22,6 +22,7 @@ module.exports = {
     },
 
     // urls
+    _selectctlUrl: 'http://192.168.1.100:8000/',
     _baseUrl: 'https://www.easecentral.com',
     _prodUrl: 'https://www.easecentral.com',
     _netlifyUrl: 'http://5b6cbcd267610c2d4cff2072.flamboyant-murdock-285c03.netlify.com',

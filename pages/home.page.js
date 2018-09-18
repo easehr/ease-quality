@@ -183,3 +183,42 @@ class HomePage {
     }
 }
 module.exports = new HomePage();
+
+
+/*
+FROM: https://github.com/easehr/ease-app/blob/master/util/MFA.cs
+
+
+public static bool IsValid(String secret, String password, int checkAdjacentIntervals = 1) {
+            // Keeping a cache of the secret/password combinations that have been requested allows us to
+            // make this a real one time use system. Once a secret/password combination has been tested,
+            // it cannot be tested again until after it is no longer valid.
+            // See http://tools.ietf.org/html/rfc6238#section-5.2 for more info.
+
+            if (String.IsNullOrEmpty(secret) || String.IsNullOrEmpty(password)) return false;
+
+            password = password.Replace(" ", "");
+
+            var cacheKey = "MFA_" + secret + "_" + password;
+            //if (Cache.Instance[cacheKey] != null) return false;
+            //Cache.Instance[cacheKey] = "";
+
+            if (password == GetPassword(secret)) return true;
+
+            for (int i = 1; i <= checkAdjacentIntervals; i++) {
+                if (password == GetPassword(secret, GetCurrentCounter() - i)) return true;
+                if (password == GetPassword(secret, GetCurrentCounter() + i)) return true;
+            }
+
+            return false;
+        }
+
+
+
+EMAIL:
+
+https://developers.google.com/gmail/api/quickstart/nodejs
+https://emailjs.org/
+
+
+*/
