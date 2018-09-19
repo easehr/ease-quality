@@ -29,12 +29,15 @@ If you run into any issues - please check that you have these dependencies.
 
 ## Troubleshoot
 (1) **URLs**:
+
 To update URLs to test with, make changes to **utils/utility.js**.
 
 (2) **Browsers**:
+
 Customize each browser test by modifying the **gruntfile.js** and add a new **wdio.[browser_name].conf.js**
 
 (3) **Chrome**: 
+
 (a) If **chromedriver** does not execute, you can open a terminal window and navigate to your **ease-quality** directory, thenrun the following: 
 
 *java -jar -Dwebdriver.chrome.driver=./drivers/chromedriver -Dwebdriver.gecko.driver=./drivers/geckodriver  -Dwebdriver.safari.driver=./usr/bin/safaridriver  ./drivers/selenium-server-standalone-3.14.0.jar*
@@ -43,4 +46,4 @@ Customize each browser test by modifying the **gruntfile.js** and add a new **wd
 
 **Mac**: */Applications/Google Chrome.app/Contents/MacOS/Google Chrome*
 
-**Windows 10**: *C:\Program Files (x86)\Google\Chrome\Application\chrome.exe*
+**Windows 10**: *C:/Program Files (x86)/Google/Chrome/Application/chrome.exe*
