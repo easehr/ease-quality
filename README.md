@@ -3,14 +3,14 @@
 Initial setup framework for automated UI tests, now optimized to support React. A work in progress.
 
 ## Run a single test
-
-1. After cloning this repo, go to the **ease-quality** directory, and run `npm install`.
-2. Next, run  `npm update`.
-3. Type `grunt webdriver:chrome -v`, which will launch Chrome and navigate to our production version of EaseCentral. **Don't worry**. This is just a simple test.
+1. Clone this repo.
+2. Install the latest [Java JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html)
+3. Open a terminal window, then go to the **ease-quality** directory and run `npm install`.
+4. Next, type `grunt webdriver:chrome -v`, which will launch Chrome and navigate to our production version of EaseCentral. **Don't worry**. This is just a simple test.
 
 ###  - OR - 
 
-4. If you have **ease-ui** and you are running **yarn start**, type 
+4. If you have **ease-ui** and you are running **yarn start**, type: 
 
 `grunt webdriver:selectchrome -v`
 
