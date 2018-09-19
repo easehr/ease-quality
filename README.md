@@ -40,10 +40,10 @@ Customize each browser test by modifying the **gruntfile.js** and add a new **wd
 
 (a) If **chromedriver** does not execute, you can open a terminal window and navigate to your **ease-quality** directory, thenrun the following: 
 
-*java -jar -Dwebdriver.chrome.driver=./drivers/chromedriver -Dwebdriver.gecko.driver=./drivers/geckodriver  -Dwebdriver.safari.driver=./usr/bin/safaridriver  ./drivers/selenium-server-standalone-3.14.0.jar*
+`java -jar -Dwebdriver.chrome.driver=./drivers/chromedriver -Dwebdriver.gecko.driver=./drivers/geckodriver  -Dwebdriver.safari.driver=./usr/bin/safaridriver  ./drivers/selenium-server-standalone-3.14.0.jar`
 
 (b) If your Chrome binary is not found, you will have to make sure that your binary path is set to:
 
-**Mac**: */Applications/Google Chrome.app/Contents/MacOS/Google Chrome*
+**Mac**: `/Applications/Google Chrome.app/Contents/MacOS/Google Chrome`
 
-**Windows 10**: *C:/Program Files (x86)/Google/Chrome/Application/chrome.exe*
+**Windows 10**: `C:/Program Files (x86)/Google/Chrome/Application/chrome.exe`
