@@ -4,8 +4,8 @@ Initial setup framework for automated UI tests, now optimized to support React. 
 
 ## Run a single test
 
-1. In root directory, apply  `npm install` for your environment.
-2. Next, apply  `npm update`.
+1. After cloning this repo, go to the **ease-quality** directory, and run `npm install`.
+2. Next, run  `npm update`.
 3. Type `grunt webdriver:chrome -v`, which will launch Chrome and navigate to our production version of EaseCentral. **Don't worry**. This is just a simple test.
 
 ###  - OR - 
