@@ -28,10 +28,16 @@ If you run into any issues - please check that you have these dependencies.
 - /usr/bin/safaridriver (automatically installed w/ Safari)
 
 ## Troubleshoot
-(1) To update URLs to test with, make changes to **utils/utility.js**.
+(1) **URLs**: To update URLs to test with, make changes to **utils/utility.js**.
 
-(2) Customize each browser test by modifying the **gruntfile.js** and add a new **wdio.[browser_name].conf.js**
+(2) **Browsers**: Customize each browser test by modifying the **gruntfile.js** and add a new **wdio.[browser_name].conf.js**
 
-(3) If **chromedriver** does not execute, you can open a terminal window and navigate to your **ease-quality** directory, thenrun the following: 
+(3) **Chrome**: 
+(a) If **chromedriver** does not execute, you can open a terminal window and navigate to your **ease-quality** directory, thenrun the following: 
 
 *java -jar -Dwebdriver.chrome.driver=./drivers/chromedriver -Dwebdriver.gecko.driver=./drivers/geckodriver  -Dwebdriver.safari.driver=./usr/bin/safaridriver  ./drivers/selenium-server-standalone-3.14.0.jar*
+
+(b) If your Chrome binary is not found, you will have to make sure that your binary path is set to:
+
+**Mac**: */Applications/Google Chrome.app/Contents/MacOS/Google Chrome*
+**Windows 10**: *C:\Program Files (x86)\Google\Chrome\Application\chrome.exe*
