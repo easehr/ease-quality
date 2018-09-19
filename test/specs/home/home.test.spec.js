@@ -1,7 +1,7 @@
 "use strict";
 
-let HomePage = require('../../pages/home.page');
-let WD = require('../../wdio.chrome.conf');
+let HomePage = require('../../../pages/home.page');
+let WD = require('../../../wdio.chrome.conf');
 
 // Url / application under test
 let TestURL = WD.config.prodUrl;
