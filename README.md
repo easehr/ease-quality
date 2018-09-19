@@ -28,15 +28,15 @@ If you run into any issues - please check that you have these dependencies.
 - /usr/bin/safaridriver (automatically installed w/ Safari)
 
 ## Troubleshoot
-###**URLs**
+### **URLs**
 
 To update URLs to test with, make changes to **utils/utility.js**.
 
-###**Browsers**:
+### **Browsers**:
 
 Customize each browser test by modifying the **gruntfile.js** and add a new **wdio.[browser_name].conf.js**
 
-###**Chrome**: 
+### **Chrome**: 
 
 (a) If **chromedriver** does not execute, you can open a terminal window and navigate to your **ease-quality** directory, thenrun the following: 
 
