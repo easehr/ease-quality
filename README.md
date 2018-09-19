@@ -19,7 +19,7 @@ which will launch Chrome and navigate to  **192.168.1.100** to test a single uti
 ## Dependencies
 If you run into any issues - please check that you have these dependencies.
 
-- Java JRE (latest version)
+- Java JDK ([latest version](http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html))
 - nodeJS (latest version)
 - npm (latest version)
 - drivers/chromedriver
