@@ -17,7 +17,7 @@ Initial setup framework for automated UI tests, now optimized to support React. 
 which will launch Chrome and navigate to  **192.168.1.100** to test a single utility page (if you have a different IP address, you can update the IP Address / URL - see **Troubleshoot** below).
 
 ## Dependencies
-If you run into any issues - please check that you have these dependencies.
+If you run into any issues - please check that you have met these dependencies, which are:
 
 - Java JDK ([latest version](http://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html))
 - nodeJS (latest version)
