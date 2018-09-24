@@ -13,22 +13,54 @@ exports.config = {
     // './test/specs/file-to-exclude.js'
   ],
 
+  maxInstances: 1,
+
   // ============
   // Capabilities
   // ============
-  maxInstances: 15,
-  capabilities: [        
+  
+  capabilities: [         
     {
       browserName: 'chrome',
       platform: 'MAC',
+      webDriverType: 'chromedriver',
       acceptUntrustedCertificates: true,
-      maxInstances: '5',
+      maxInstances: '1',
+    },
+    {
+      browserName: 'internet explorer',
+      platform: 'Windows',
+      maxInstances: '1',
+    },
+    {
+      browserName: 'firefox',
+      platform: 'MAC',
+      webDriverType: 'geckodriver',
+      maxInstances: '1',
+      marionette: true,
+      javascriptEnabled: true,
+      browserConnectionEnabled: true,
+      acceptSslCerts: true,
+      firefoxOptions: {
+        binary: '/usr/local/firefox/bin/firefox',
+      },
+    },
+    {
+      browserName: 'safari',
+      platform: 'MAC',
+      webDriverType: 'safaridriver',
+      acceptUntrustedCertificates: true,
+      maxInstances: '1',
+      safariOptions: {
+        args: ['--enable', ],
+        binary: '/Applications/Safari.app ./usr/bin/safaridriver'
+      },     
     },
   ],
+  
 
-  services: ['selenium-standalone'],
-  webDriverType: 'chromedriver',
-
+  services: ['selenium-standalone', 'iedriver'],
+  
   // ===================
   // Test Configurations
   // ===================
@@ -52,6 +84,8 @@ exports.config = {
       junit:  {outputDir:   './test/reports/junit-results/'},
       json:   {outputDir:   './test/reports/json-results/'},
   },
+
+
 
   // =========
   // Test Data

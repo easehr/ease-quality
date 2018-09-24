@@ -7,17 +7,23 @@ let ds = d.getMonth() + '.' + d.getDay() + '.' + d.getFullYear() + '.' + d.getMi
 module.exports = {
     
     // methods
-    exitStamp: function (exitcode, browser) {        
+    exitStamp: function (exitcode, browser) {  
+        if(browser === 'internet explorer') {
+            browser = 'IE';
+        }     
         console.log('[' + browser + ' | Exitcode: ' + exitcode + ' | Stamp: ' + ds + ']');    
     },
 
     quarantineStamp: function (exitcode, browser) {
+        if(browser === 'internet explorer') {
+            browser = 'IE';
+        }     
         fs.appendFile('./test/reports/quarantine-results/'+browser+'.txt', exitcode+':'+ ds +'\r\n', function(err) {
             if(err) throw err;            
         });
     },
 
-    easeStamp: function(browser, status) {
+    easeStamp: function(browser, status) {        
         console.log('EaseCentral: ' + browser + ' Browser: Automated Functional Tests: ' + status);
     },
 

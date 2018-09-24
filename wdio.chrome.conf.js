@@ -16,14 +16,14 @@ exports.config = {
   // ============
   // Capabilities
   // ============
-  maxInstances: 15,
+  maxInstances: 1,
   capabilities: [        
     {
       browserName: 'chrome',
       platform: 'MAC',
       acceptUntrustedCertificates: true,
-      maxInstances: '5',
-    },
+      maxInstances: '1',
+    }       
   ],
 
   services: ['selenium-standalone'],

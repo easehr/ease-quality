@@ -14,7 +14,8 @@ let PressURL = WD.config.pressBlogUrl;
 
 describe('EaseCentral', function() {
     describe('Home', function() { 
-        browser.windowHandleSize({width: 1450, height: 1400});
+        browser.windowHandleSize({ width: 1450, height: 1400 });
+        browser.setViewportSize(200, true);
         
         it('test that the page is accessible and opens in browser.', function() {  
             this.retries(3);

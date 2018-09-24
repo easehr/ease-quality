@@ -20,8 +20,13 @@ module.exports = function (grunt) {
             firefox: {
                 configFile: 'wdio.firefox.conf.js'      // firefox
             },
-            selectchrome: {
-                configFile: 'wdio.selectchrome.conf.js'       // test select controller in chrome
+
+            ie: {
+                configFile: 'wdio.ie.conf.js'           // ie
+            },
+
+            selectctrl: {
+                configFile: 'wdio.selectctrl.conf.js --suite chromeSuite' // note: 09/20/18 ... does not work yet - i need to pass in the options
             },                       
         },
     });

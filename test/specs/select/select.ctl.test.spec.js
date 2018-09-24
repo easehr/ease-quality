@@ -1,13 +1,18 @@
 "use strict";
 
 let SelectCtlPage = require('../../../pages/select.ctl.page');
-let WD = require('../../../wdio.selectchrome.conf');
+let WD = require('../../../wdio.selectall.conf');
 
 let TestURL = WD.config.selectctlUrl;
 
 describe('Select Controller tests:', function() {    
-    describe('first droplist', function() {         
-        browser.windowHandleSize({width: 1450, height: 1400});
+    describe('first droplist', function() { 
+
+        browser.pause(8000);
+
+        browser.windowHandleSize({ width: 1450, height: 1400 });
+        browser.setViewportSize(200, true);
+
         // selection
         it('tests the ability to select an option.', function() {  
             this.retries(3);
