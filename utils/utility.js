@@ -2,7 +2,8 @@
 
 const fs = require('fs');
 let d = new Date();
-let ds = d.getMonth() + '.' + d.getDay() + '.' + d.getFullYear() + '.' + d.getMinutes() + ':' + d.getSeconds() + ':' + d.getMilliseconds();
+
+let ds = (d.getMonth() + parseInt(1)) + '.' + d.getDate() + '.' + d.getFullYear() + '.' + d.getHours() + '.' + d.getMinutes() + '.' + d.getSeconds();
 
 module.exports = {
     
@@ -28,6 +29,10 @@ module.exports = {
     },
 
     // urls
+    _etUrl: 'https://easycentralqa.new.easecentral.com/?CCh5DmKolLIXrWjfVuX7nA==_2517a82cc29415d44309d582250ac8a214728d788298e9e98e3d1d8b30b83380ec',
+    _etTabPageUrl: 'https://easycentralqa.new.easecentral.com/?yhE6QDVmYvqRzlh25TL0GBpEJay64NTy5EzhM68Ay1c9V4ShE7NRWDEFSuluxB/FPhdUieg4RoPvBv8KGxZX5A/TpkL7Vqx6fhmo10GgzZwTPppAmom7yWK4fc5aJ1OG_950b496c3026a321030af10552848180c307ed5ca2627d5117e7180df7e35f71ec',
+    _employeeUrl: 'https://qualitycompany.new.easecentral.com/?CCh5DmKolLIXrWjfVuX7nA==_2517a82cc29415d44309d582250ac8a214728d788298e9e98e3d1d8b30b83380ec',
+    _employeeDashboardUrl: 'https://qualitycompany.new.easecentral.com/?rn354KXxhGrhIBM+aK/NPnwSOqk0YHAfeSiGt6h8IyM=_e87197d5d6178e51225f9e95381d5f5958343f2423bfd87b2a4f87affe180435ec',
     _selectctlUrl: 'http://192.168.1.100:8000/',
     _baseUrl: 'https://www.easecentral.com',
     _prodUrl: 'https://www.easecentral.com',
@@ -41,5 +46,11 @@ module.exports = {
     _helpProdUrl: 'https://support.easecentral.com/support/home',
     _pressBlogUrl: 'http://blog.easecentral.com/category/news/',
     _miscUrl: '',
+
+    // data
+    _empId: 'john.arterberry+two@easecentral.com',
+    _empPwd: '2bad!g699BBM',
+    _etID: 'john.arterberry+ceo@easecentral.com',
+    _etPwd: 'QvSL*rr4'
 
 };

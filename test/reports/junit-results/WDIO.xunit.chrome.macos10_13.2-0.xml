@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="EaseCentral" timestamp="2018-10-26T16:36:46" time="52.852" tests="0" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="7fe09829cabc7a928757d9101cd1752c"/>
+      <property name="suiteName" value="EaseCentral"/>
+      <property name="capabilities" value="chrome.macos10_13"/>
+      <property name="file" value="./test/specs/employee/employee.test.js"/>
+    </properties>
+  </testsuite>
+  <testsuite name="Employee" timestamp="2018-10-26T16:36:46" time="52.85" tests="3" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="7fe09829cabc7a928757d9101cd1752c"/>
+      <property name="suiteName" value="Employee"/>
+      <property name="capabilities" value="chrome.macos10_13"/>
+      <property name="file" value="./test/specs/employee/employee.test.js"/>
+    </properties>
+    <testcase classname="chrome.macos10_13.Employee" name="test_should_verify_login_access_to_EaseCentral_with_a_valid_ID_and_password" time="14.949">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/execute - {"script":"sauce:context=Employee - test should verify login access to EaseCentral with a valid ID and password.","args":[]}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":""}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/url - {"url":"https://qualitycompany.new.easecentral.com/?CCh5DmKolLIXrWjfVuX7nA==_2517a82cc29415d44309d582250ac8a214728d788298e9e98e3d1d8b30b83380ec"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":null}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":null}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"id","value":"email"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.8898625606753467-1"}}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/elements - {"using":"id","value":"email"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":[{"ELEMENT":"0.8898625606753467-1"}]}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"id","value":"email"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.8898625606753467-1"}}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/elements - {"using":"id","value":"email"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":[{"ELEMENT":"0.8898625606753467-1"}]}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.8898625606753467-1/clear - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":null}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.8898625606753467-1/value - {"value":["j","o","h","n",".","a","r","t","e","r","(25 more items)"],"text":"john.arterberry+two@easecentral.com"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":null}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"id","value":"password"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.8898625606753467-2"}}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/elements - {"using":"id","value":"password"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":[{"ELEMENT":"0.8898625606753467-2"}]}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.8898625606753467-2/clear - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":null}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.8898625606753467-2/value - {"value":["2","b","a","d","!","g","6","9","9","B","(2 more items)"],"text":"2bad!g699BBM"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":null}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"xpath","value":"//form[@id=\"auth\"]/button"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.8898625606753467-3"}}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.8898625606753467-3/click - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":null}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"css selector","value":".c-nav-default__caret.icon__arrow-down"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.3876900552244653-1"}}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.3876900552244653-1/click - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":null}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"css selector","value":"a.c-menu__option > span"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.3876900552244653-2"}}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.3876900552244653-2/click - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":null}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"xpath","value":"//a[contains(text(),\"Home\")]"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.16466718277448655-1"}}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/elements - {"using":"xpath","value":"//a[contains(text(),\"Home\")]"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":[{"ELEMENT":"0.16466718277448655-1"}]}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"xpath","value":"//a[contains(text(),\"Home\")]"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.16466718277448655-1"}}
+COMMAND: GET http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.16466718277448655-1/text - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":"Home"}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"xpath","value":"//a[contains(text(),\"Home\")]"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.16466718277448655-1"}}
+COMMAND: GET http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.16466718277448655-1/text - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":"Home"}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"xpath","value":"//a[contains(text(),\"Home\")]"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.16466718277448655-1"}}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.16466718277448655-1/click - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":null}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.macos10_13.Employee" name="test_should_verify_that_the_dashboard_is_displayed_and_the_menu_is_functional" time="21.536">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/execute - {"script":"sauce:context=Employee - test should verify that the dashboard is displayed and the menu is functional.","args":[]}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":""}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/url - {"url":"https://qualitycompany.new.easecentral.com/?rn354KXxhGrhIBM+aK/NPnwSOqk0YHAfeSiGt6h8IyM=_e87197d5d6178e51225f9e95381d5f5958343f2423bfd87b2a4f87affe180435ec"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":null}
+COMMAND: GET http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/url - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":"https://qualitycompany.new.easecentral.com/?rn354KXxhGrhIBM+aK/NPnwSOqk0YHAfeSiGt6h8IyM=_e87197d5d6178e51225f9e95381d5f5958343f2423bfd87b2a4f87affe180435ec"}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"xpath","value":"//nav/ul/li[2]/a/span"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.9518018022363413-1"}}
+COMMAND: GET http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.9518018022363413-1/text - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":"Profile"}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"xpath","value":"//nav/ul/li[2]/a/span"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.9518018022363413-1"}}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.9518018022363413-1/click - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":null}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"xpath","value":"//nav/ul/li[3]/a/span"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.9672253559553523-1"}}
+COMMAND: GET http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.9672253559553523-1/text - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":"Benefits"}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"xpath","value":"//nav/ul/li[3]/a/span"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.9672253559553523-1"}}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.9672253559553523-1/click - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":null}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"xpath","value":"//nav/ul/li[4]/a/span"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.34446362643723893-1"}}
+COMMAND: GET http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.34446362643723893-1/text - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":"Documents"}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"xpath","value":"//nav/ul/li[4]/a/span"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.34446362643723893-1"}}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.34446362643723893-1/click - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":null}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"xpath","value":"//li[5]/a/span"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.8858029343642682-1"}}
+COMMAND: GET http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.8858029343642682-1/text - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":"Paystubs"}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"xpath","value":"//li[5]/a/span"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.8858029343642682-1"}}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.8858029343642682-1/click - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":null}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"xpath","value":"//li[6]/a/span"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.40442916227038905-1"}}
+COMMAND: GET http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.40442916227038905-1/text - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":"Time Off"}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"xpath","value":"//li[6]/a/span"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.40442916227038905-1"}}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.40442916227038905-1/click - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":null}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"xpath","value":"//li[7]/a/span"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.9276097620041615-1"}}
+COMMAND: GET http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.9276097620041615-1/text - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":"Calendar"}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"xpath","value":"//li[7]/a/span"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.9276097620041615-1"}}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.9276097620041615-1/click - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":null}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"xpath","value":"//li[8]/a/span"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.7646060650578013-1"}}
+COMMAND: GET http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.7646060650578013-1/text - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":"Directory"}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"xpath","value":"//li[8]/a/span"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.7646060650578013-1"}}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.7646060650578013-1/click - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":null}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.macos10_13.Employee" name="test_should_verify_that_the_user_can_start_and_functionally_use_the_benefit_enrollment_form_and_pages" time="16.361">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/execute - {"script":"sauce:context=Employee - test should verify that the user can start and functionally use the benefit enrollment form and pages.","args":[]}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":""}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/url - {"url":"https://qualitycompany.new.easecentral.com/?rn354KXxhGrhIBM+aK/NPnwSOqk0YHAfeSiGt6h8IyM=_e87197d5d6178e51225f9e95381d5f5958343f2423bfd87b2a4f87affe180435ec"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":null}
+COMMAND: GET http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/url - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":"https://qualitycompany.new.easecentral.com/?rn354KXxhGrhIBM+aK/NPnwSOqk0YHAfeSiGt6h8IyM=_e87197d5d6178e51225f9e95381d5f5958343f2423bfd87b2a4f87affe180435ec"}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"css selector","value":"button.c-button.c-dash-bar__btn.c-dash-bar__btn--success"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.9416668521434743-1"}}
+COMMAND: GET http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.9416668521434743-1/text - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":"Start Enrollment"}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"css selector","value":"button.c-button.c-dash-bar__btn.c-dash-bar__btn--success"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.9416668521434743-1"}}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.9416668521434743-1/click - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":null}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element - {"using":"css selector","value":"button.c-button--xl.button.c-button"}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":{"ELEMENT":"0.9470348150409851-1"}}
+COMMAND: POST http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43/element/0.9470348150409851-1/click - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":null}
+COMMAND: DELETE http://localhost:4445/wd/hub/session/c00a5a21b09b49cea2c8bff0c7b82e43 - {}
+RESULT: {"status":0,"sessionId":"c00a5a21b09b49cea2c8bff0c7b82e43","value":""}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

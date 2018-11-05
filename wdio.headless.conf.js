@@ -2,28 +2,15 @@ const u = require('./utils/utility');
 let _browser = "";
 
 exports.config = {
-    // ==================
-    // Specify Test Files
-    // ==================
-    specs: [
-      './test/specs/home/*.js'
-   ],
-   // Patterns to exclude.
-   exclude: [
-       // './test/specs/file-to-exclude.js'
-   ],
-
    // ============
    // Capabilities
    // ============
-    maxInstances: 15,
+    maxInstances: 5,
     capabilities: [          
         {
             browserName: 'chrome',
             browserID: 'headless',
-            platform: 'MAC',
             acceptUntrustedCertificates: true,
-            maxInstances: '5',
             chromeOptions: {
               args: ['--window-size=1280,1280', '--port=9999', '--headless', '--disable-gpu', '--remote-debugging-port=9223', '--disable-translate', '--disable-extensions'],
               binary: '/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'

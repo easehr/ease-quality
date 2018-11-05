@@ -2,27 +2,15 @@ const utils = require('./utils/utility');
 let _browser = "";
 
 exports.config = {
-  // ==================
-  // Specify Test Files
-  // ==================
-  specs: [
-    './test/specs/home/*.js'
-  ],
-  // Patterns to exclude.
-  exclude: [
-    // './test/specs/file-to-exclude.js'
-  ],
-
   // ============
   // Capabilities
   // ============
-  maxInstances: 15,
+  maxInstances: 5,
   capabilities: [        
     {
       browserName: 'safari',
       platform: 'MAC',
       acceptUntrustedCertificates: true,
-      maxInstances: '5',
       safariOptions: {
         args: ['--enable', ],
         binary: '/Applications/Safari.app ./usr/bin/safaridriver'
@@ -60,6 +48,8 @@ exports.config = {
   // =========
   // Test Data
   // =========
+  employeeUrl: utils._employeeUrl,
+  selectctlUrl: utils._selectctlUrl,
   baseUrl: utils._baseUrl,
   prodUrl: utils._prodUrl,
   netlifyUrl: utils._netlifyUrl,

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="EaseCentral" timestamp="2018-11-05T09:32:32" time="11.901" tests="0" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="6bae9c11f2743aa8d519cf8e85792ae7"/>
+      <property name="suiteName" value="EaseCentral"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value="./test/specs/emailtemplates/emailtemplates.test.js"/>
+    </properties>
+  </testsuite>
+  <testsuite name="Email_Templates" timestamp="2018-11-05T09:32:32" time="11.9" tests="6" failures="0" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="6bae9c11f2743aa8d519cf8e85792ae7"/>
+      <property name="suiteName" value="Email Templates"/>
+      <property name="capabilities" value="chrome"/>
+      <property name="file" value="./test/specs/emailtemplates/emailtemplates.test.js"/>
+    </properties>
+    <testcase classname="chrome.Email_Templates" name="test_should_verify_login_to_access_email_templates_on_EaseCentral_with_a_valid_ID_and_password" time="2.772">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/url - {"url":"https://easycentralqa.new.easecentral.com/?CCh5DmKolLIXrWjfVuX7nA==_2517a82cc29415d44309d582250ac8a214728d788298e9e98e3d1d8b30b83380ec"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":null}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"id","value":"email"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.81544109134374-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/elements - {"using":"id","value":"email"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":[{"ELEMENT":"0.81544109134374-1"}]}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"id","value":"email"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.81544109134374-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/elements - {"using":"id","value":"email"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":[{"ELEMENT":"0.81544109134374-1"}]}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.81544109134374-1/clear - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.81544109134374-1/value - {"value":["j","o","h","n",".","a","r","t","e","r","(25 more items)"],"text":"john.arterberry+ceo@easecentral.com"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"id","value":"password"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.81544109134374-2"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/elements - {"using":"id","value":"password"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":[{"ELEMENT":"0.81544109134374-2"}]}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.81544109134374-2/clear - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.81544109134374-2/value - {"value":["Q","v","S","L","*","r","r","4"],"text":"QvSL*rr4"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"xpath","value":"//form[@id=\"auth\"]/button"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.81544109134374-3"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.81544109134374-3/click - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"xpath","value":"//a[contains(text(),\"Home\")]"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.32912637039113446-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/elements - {"using":"xpath","value":"//a[contains(text(),\"Home\")]"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":[{"ELEMENT":"0.32912637039113446-1"}]}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"xpath","value":"//a[contains(text(),\"Home\")]"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.32912637039113446-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.32912637039113446-1/text - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":"Home"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"xpath","value":"//a[contains(text(),\"Home\")]"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.32912637039113446-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.32912637039113446-1/text - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":"Home"}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.Email_Templates" name="test_should_confirm_that_the_email_templates_page_title_is_set" time="0.721">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"xpath","value":"//li[8]/a"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.32912637039113446-2"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.32912637039113446-2/click - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"link text","value":"Email Templates"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.363510563054702-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/elements - {"using":"link text","value":"Email Templates"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":[{"ELEMENT":"0.363510563054702-1"}]}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"link text","value":"Email Templates"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.363510563054702-1"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.363510563054702-1/click - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":null}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/title - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":"Company Settings Email Templates"}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.Email_Templates" name="test_verifies_that_the_Name_Type_Description_Created_and_Updated_columns_appear_on_the_email_template" time="0.216">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"css selector","value":"div.row > div > span"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.8865094165749268-1"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.8865094165749268-1/text - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":"Name"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"xpath","value":"//div[2]/span"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.8865094165749268-2"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.8865094165749268-2/text - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":"Type"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"xpath","value":"//div[3]/span"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.8865094165749268-3"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.8865094165749268-3/text - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":"Description"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"xpath","value":"//div[4]/span"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.8865094165749268-4"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.8865094165749268-4/text - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":"Created"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"xpath","value":"//div[5]/span"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.8865094165749268-5"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.8865094165749268-5/text - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":"Updated"}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.Email_Templates" name="test_confirms_the_Action_dropdown_menu_functions_on_the_email_templates_page" time="7.02">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"css selector","value":"button.button.c-button > svg.icon__arrow-down"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.8865094165749268-6"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.8865094165749268-6/click - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"xpath","value":"//a[contains(text(),\"Create From Blank\")]"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.8865094165749268-7"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.8865094165749268-7/click - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"id","value":"addBlankEmailTemplateModalTitle"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.8865094165749268-8"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.8865094165749268-8/text - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":"Create Blank Template"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"id","value":"addBlankEmailTemplateModalCancel"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.8865094165749268-9"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.8865094165749268-9/click - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"css selector","value":"button.button.c-button > svg.icon__arrow-down"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.8865094165749268-6"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.8865094165749268-6/click - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"xpath","value":"//a[contains(text(),\"Create From Default\")]"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.8865094165749268-10"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.8865094165749268-10/click - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"id","value":"addDefaultEmailTemplateModalTitle"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.8865094165749268-11"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.8865094165749268-11/text - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":"Create Template From Default"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"id","value":"addDefaultEmailTemplateModalCancel"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.8865094165749268-12"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.8865094165749268-12/click - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":null}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.Email_Templates" name="test_confirms_that_the_search_function_on_the_email_templates_page" time="1.168">
+      <error message="  -- Failure: Unable to verify search input.: expected '' to equal 'ACA'"/>
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"id","value":"searchName"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.8865094165749268-13"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/elements - {"using":"id","value":"searchName"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":[{"ELEMENT":"0.8865094165749268-13"}]}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.8865094165749268-13/clear - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.8865094165749268-13/value - {"value":["A","C","A"],"text":"ACA"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element - {"using":"id","value":"searchName"}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":{"ELEMENT":"0.8865094165749268-13"}}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e/element/0.8865094165749268-13/text - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":""}
+]]>
+      </system-out>
+      <system-err>
+        <![CDATA[
+AssertionError:   -- Failure: Unable to verify search input.: expected '' to equal 'ACA'
+    at EmailtemplatePage.testSearchForm (/Users/johnarterberry/dev/ease-quality/pages/emailtemplates.page.js:84:16)
+    at Context.<anonymous> (/Users/johnarterberry/dev/ease-quality/test/specs/emailtemplates/emailtemplates.test.js:32:32)
+    at new Promise (<anonymous>)
+    at new F (/Users/johnarterberry/dev/ease-quality/node_modules/core-js/library/modules/_export.js:36:28)
+]]>
+      </system-err>
+    </testcase>
+    <testcase classname="chrome.Email_Templates" name="test_confirms_that_the_type_filter_functions_on_the_email_templates_page" time="0.001">
+      <system-out>
+        <![CDATA[
+COMMAND: DELETE http://127.0.0.1:4444/wd/hub/session/30b08fb273f8e22cbc190778fbd3773e - {}
+RESULT: {"sessionId":"30b08fb273f8e22cbc190778fbd3773e","status":0,"value":null}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

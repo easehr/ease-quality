@@ -2,7 +2,7 @@
 
 let Page = require('./page');
 let Assert = require('chai').assert;
-let Faker = require('Faker');
+let Faker = require('faker');
 
 class HomePage {
 
@@ -212,8 +212,6 @@ public static bool IsValid(String secret, String password, int checkAdjacentInte
 
             return false;
         }
-
-
 
 EMAIL:
 

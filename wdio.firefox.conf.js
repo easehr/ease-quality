@@ -2,25 +2,13 @@ const utils = require('./utils/utility');
 let _browser = "";
 
 exports.config = {
-  // ==================
-  // Specify Test Files
-  // ==================
-  specs: [
-    './test/specs/home/*.js'
-  ],
-  // Patterns to exclude.
-  exclude: [
-    // './test/specs/file-to-exclude.js'
-  ],
-
   // ============
   // Capabilities
   // ============
-  maxInstances: 15,
+  maxInstances: 5,
   capabilities: [ 
     {
       browserName: 'firefox',
-      platform: 'MAC',
       version: '',
       maxInstances: '5',
       marionette: true,
@@ -31,7 +19,7 @@ exports.config = {
   ],
 
   services: ['selenium-standalone'],
-  webDriverType: 'geckodriver',
+  //webDriverType: 'geckodriver',
     
   seleniumArgs: {
     seleniumArgs: [], 
@@ -65,6 +53,8 @@ exports.config = {
   // =========
   // Test Data
   // =========
+  employeeUrl: utils._employeeUrl,
+  selectctlUrl: utils._selectctlUrl,
   baseUrl: utils._baseUrl,
   prodUrl: utils._prodUrl,
   netlifyUrl: utils._netlifyUrl,
