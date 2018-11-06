@@ -52,8 +52,10 @@ function readFile(input) {
   let describeArray = [];
   let itArray = [];
 
+// TODO: Need to associate the next Describe to the next set of tests, line by line.
+
   while (line = liner.next()) {    
-    if(line.includes("describe('")) {        
+    if(line.includes("describe('")) {     
       let testplanHeader = line.toString('ascii').substr(parseInt(line.indexOf('describe')) + 10);
       describeArray[incY] = testplanHeader.slice(0, testplanHeader.lastIndexOf("',"));
       incY++;      

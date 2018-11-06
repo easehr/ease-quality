@@ -8,7 +8,6 @@ class EmailtemplatePage {
 
     // SELECTORS
     emailtempSettingsLink() { return browser.element("//li[8]/a"); } 
-    //emailtempTemplateLink() { return browser.element('//a[contains(text(),"Email Templates")]'); }
     emailtempTemplateLink() { return browser.element('=Email Templates'); }
     
     emailtempNameColumn() { return browser.element('div.row > div > span');  }
@@ -27,6 +26,12 @@ class EmailtemplatePage {
 
     emailtempSearchInput() { return browser.element('#searchName');  }
     emailtempSearchSubmit() { return browser.element('#searching');  }
+
+    emailtempTypeInput() { return browser.element('//*[@id="templateTypeRow"]/div/div[2]');  }
+    emailtempTypeSelectACAEligible() { return browser.element('//div[@id="templateTypeRow"]/div/div[3]/div/div[2]/span');  }
+    emailtempTypeCompanyDocTemplate() { return browser.element('=Company Documents Review Template');  }
+    
+    // DEBUG: console.log(browser.element(this.emailtempTypeCompanyDocTemplate().selector));        
 
     // TEST METHODS    
     testValidLogin(_id, _pwd) {
@@ -52,41 +57,37 @@ class EmailtemplatePage {
         this.emailtempActionsCaret().click();
         this.emailtempCreateBlankTempMenu().click();        
         Assert.equal(this.emailtempCreateBlankModalTitle().getText().toUpperCase(), 'CREATE BLANK TEMPLATE', "  -- Failure: Modal did not launch or has an incorrect title.");
-        browser.pause(2500);
+        browser.pause(500);
         this.emailtempCreateBlankModalClose().click();
-        browser.pause(2500);
+        browser.pause(500);
         this.emailtempActionsCaret().click();
         this.emailtempCreateTempFromDefaultMenu().click();
         Assert.equal(this.emailtempCreateTempDefaultModalTitle().getText().toUpperCase(), 'CREATE TEMPLATE FROM DEFAULT', "  -- Failure: Modal did not launch or has an incorrect title.");
-        browser.pause(1500);
+        browser.pause(500);
         this.emailtempCreateTempDefaultModalClose().click();
     }
 
-    testClickEmployeeMenu(_url) { 
-        browser.pause(1000);      
-        if(_url === browser.getUrl()) {
-            if( this.employeeProfileMenu().getText().toUpperCase() === "PROFILE") {this.employeeProfileMenu().click();}
-            if( this.employeeBenefitsMenu().getText().toUpperCase() === "BENEFITS") {this.employeeBenefitsMenu().click();}
-            if( this.employeeDocumentsMenu().getText().toUpperCase() === "DOCUMENTS") {this.employeeDocumentsMenu().click();}
-            if( this.employeePayStubsMenu().getText().toUpperCase() === "PAYSTUBS") {this.employeePayStubsMenu().click();}
-            if( this.employeeTimeOffMenu().getText().toUpperCase() === "TIME OFF") {this.employeeTimeOffMenu().click();}
-            if( this.employeeCalendarMenu().getText().toUpperCase() === "CALENDAR") {this.employeeCalendarMenu().click();}
-            if( this.employeeDirectoryMenu().getText().toUpperCase() === "DIRECTORY") {this.employeeDirectoryMenu().click();}
-        }
+    testSearchForm(_data) {
+        var checkElement = browser.element(this.emailtempSearchInput().selector)["_status"];
+        Assert.equal(checkElement, 0, "  -- Failure: the search input selction failed.");
+        browser.setValue(this.emailtempSearchInput().selector, _data);
+        this.emailtempSearchSubmit().click();
+        browser.setValue(this.emailtempSearchInput().selector, " ");        
+        this.emailtempSearchSubmit().click();
     }
 
-    testSearchForm(_data) {
-        browser.setValue(this.emailtempSearchInput().selector, _data);
-        browser.pause(1000);
-        this.emailtempSearchSubmit().click();
-        browser.pause(1000);
-        browser.setValue(this.emailtempSearchInput().selector, " ");
-        browser.pause(1000);
-        this.emailtempSearchSubmit().click();
+    testTypeSelect() {
+        this.emailtempTypeInput().click();
+        this.emailtempTypeSelectACAEligible().click();
+        browser.pause(500);        
+        var checkElement = browser.element(this.emailtempTypeCompanyDocTemplate().selector)["type"];
+        Assert.equal(checkElement, 'NoSuchElement', "  -- Failure: the type selction failed.");
+        browser.pause(500);
+        this.emailtempTemplateLink().click();
     }
 
     testEnrollmentBenefit(_url) {
-        browser.pause(1000);
+        browser.pause(500);
         if(_url === browser.getUrl()) {
             if( this.employeeStartEnrollmentButton().getText().toUpperCase() === "START ENROLLMENT") {this.employeeStartEnrollmentButton().click();}
             browser.pause(5000);

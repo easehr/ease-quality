@@ -4,17 +4,17 @@ let EmailtemplatesPage = require('../../../pages/emailtemplates.page');
 let WD = require('../../../wdio.chrome.conf');
 
 describe('EaseCentral', function() {
-    describe('Email Templates', function() { 
+    describe('Email Templates Management Page', function() { 
         browser.windowHandleSize({ width: 1450, height: 1900 });
 
         if(WD.config.capabilities[0].browserName != 'chrome') {
             browser.windowHandleMaximize();
-        }
-        
+        }     
+
         it('test should verify login to access email templates on EaseCentral with a valid ID and password.', function() {           
             EmailtemplatesPage.open( WD.config.emailtemplateUrl ); 
             EmailtemplatesPage.testValidLogin( WD.config.companyadminId, WD.config.companyadminPwd );
-        }); 
+        });
         
         it('test should confirm that the email templates page title is set.', function() {
             EmailtemplatesPage.testTitle();
@@ -30,6 +30,24 @@ describe('EaseCentral', function() {
 
         it('test confirms that the search function on the email templates page.', function() {  
             EmailtemplatesPage.testSearchForm("ACA");         
-        });        
+        });         
+
+        it('test confirms that the type selection functions on the email templates page.', function() {  
+            EmailtemplatesPage.testTypeSelect();
+        });
     });
+    
+    describe('Create Blank Email Template', function() { 
+    });
+
+    describe('Preview Blank Email Template', function() { 
+    });    
+
+    describe('Create Default Email Template', function() { 
+    });    
+
+    describe('Preview Default Email Template', function() { 
+    });        
 }); 
+
+ 
